@@ -25,6 +25,12 @@
 		52E9E79A2A35DA65004066D4 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 52E9E7992A35DA65004066D4 /* Preview Assets.xcassets */; };
 		52E9E7A22A35E5E5004066D4 /* CircleImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52E9E7A12A35E5E5004066D4 /* CircleImage.swift */; };
 		52E9E7A42A35E6FB004066D4 /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52E9E7A32A35E6FB004066D4 /* MapView.swift */; };
+		FB94B0572A564BF100108BD8 /* hikeData.json in Resources */ = {isa = PBXBuildFile; fileRef = FB94B0562A564BF100108BD8 /* hikeData.json */; };
+		FB94B05A2A564C4900108BD8 /* Hike.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB94B0592A564C4900108BD8 /* Hike.swift */; };
+		FB94B0602A564E0000108BD8 /* GraphCapsule.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB94B05C2A564E0000108BD8 /* GraphCapsule.swift */; };
+		FB94B0612A564E0000108BD8 /* HikeGraph.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB94B05D2A564E0000108BD8 /* HikeGraph.swift */; };
+		FB94B0622A564E0000108BD8 /* HikeDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB94B05E2A564E0000108BD8 /* HikeDetail.swift */; };
+		FB94B0632A564E0000108BD8 /* HikeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB94B05F2A564E0000108BD8 /* HikeView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -48,6 +54,12 @@
 		52E9E79B2A35DA65004066D4 /* SwiftUITutorial.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = SwiftUITutorial.entitlements; sourceTree = "<group>"; };
 		52E9E7A12A35E5E5004066D4 /* CircleImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleImage.swift; sourceTree = "<group>"; };
 		52E9E7A32A35E6FB004066D4 /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
+		FB94B0562A564BF100108BD8 /* hikeData.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = hikeData.json; sourceTree = "<group>"; };
+		FB94B0592A564C4900108BD8 /* Hike.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Hike.swift; sourceTree = "<group>"; };
+		FB94B05C2A564E0000108BD8 /* GraphCapsule.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GraphCapsule.swift; sourceTree = "<group>"; };
+		FB94B05D2A564E0000108BD8 /* HikeGraph.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HikeGraph.swift; sourceTree = "<group>"; };
+		FB94B05E2A564E0000108BD8 /* HikeDetail.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HikeDetail.swift; sourceTree = "<group>"; };
+		FB94B05F2A564E0000108BD8 /* HikeView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HikeView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -126,10 +138,12 @@
 				52A8ACF62A39FC930010E22A /* CreatingAndCombiningViews */,
 				52A8ACF72A39FCAA0010E22A /* BuildingListsAndNavigation */,
 				52A8AD042A3FCE840010E22A /* HandlingUserInput */,
+				FB94B0582A564C0600108BD8 /* AnimatingViewsAndTransitions */,
 				52A8AD072A4C75770010E22A /* DrawingPathsAndShapes */,
 				52E9E7962A35DA65004066D4 /* Assets.xcassets */,
 				52E9E79B2A35DA65004066D4 /* SwiftUITutorial.entitlements */,
 				52A8ACF82A39FCF70010E22A /* landmarkData.json */,
+				FB94B0562A564BF100108BD8 /* hikeData.json */,
 				52E9E7982A35DA65004066D4 /* Preview Content */,
 			);
 			path = SwiftUITutorial;
@@ -141,6 +155,26 @@
 				52E9E7992A35DA65004066D4 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		FB94B0582A564C0600108BD8 /* AnimatingViewsAndTransitions */ = {
+			isa = PBXGroup;
+			children = (
+				FB94B0592A564C4900108BD8 /* Hike.swift */,
+				FB94B05B2A564E0000108BD8 /* Hikes */,
+			);
+			path = AnimatingViewsAndTransitions;
+			sourceTree = "<group>";
+		};
+		FB94B05B2A564E0000108BD8 /* Hikes */ = {
+			isa = PBXGroup;
+			children = (
+				FB94B05C2A564E0000108BD8 /* GraphCapsule.swift */,
+				FB94B05D2A564E0000108BD8 /* HikeGraph.swift */,
+				FB94B05E2A564E0000108BD8 /* HikeDetail.swift */,
+				FB94B05F2A564E0000108BD8 /* HikeView.swift */,
+			);
+			path = Hikes;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -201,6 +235,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FB94B0572A564BF100108BD8 /* hikeData.json in Resources */,
 				52E9E79A2A35DA65004066D4 /* Preview Assets.xcassets in Resources */,
 				52E9E7972A35DA65004066D4 /* Assets.xcassets in Resources */,
 				52A8ACF92A39FCF70010E22A /* landmarkData.json in Resources */,
@@ -219,6 +254,7 @@
 				52E9E7A42A35E6FB004066D4 /* MapView.swift in Sources */,
 				52E9E7932A35DA64004066D4 /* SwiftUITutorialApp.swift in Sources */,
 				52A8AD062A3FCEA00010E22A /* FavoriteButton.swift in Sources */,
+				FB94B05A2A564C4900108BD8 /* Hike.swift in Sources */,
 				52A8AD092A4C75CF0010E22A /* HexagonParameters.swift in Sources */,
 				52A8AD112A4C78A60010E22A /* RotatedBadgeSymbol.swift in Sources */,
 				52A8AD0F2A4C785B0010E22A /* BadgeSymbol.swift in Sources */,
@@ -226,8 +262,12 @@
 				52A8AD032A3A05AA0010E22A /* LandmarkDetail.swift in Sources */,
 				52A8AD0D2A4C76C20010E22A /* BadgeBackground.swift in Sources */,
 				52E9E7A22A35E5E5004066D4 /* CircleImage.swift in Sources */,
+				FB94B0612A564E0000108BD8 /* HikeGraph.swift in Sources */,
+				FB94B0602A564E0000108BD8 /* GraphCapsule.swift in Sources */,
 				52A8ACFB2A39FD140010E22A /* Landmark.swift in Sources */,
+				FB94B0622A564E0000108BD8 /* HikeDetail.swift in Sources */,
 				52A8ACFF2A3A00680010E22A /* LandmarkRow.swift in Sources */,
+				FB94B0632A564E0000108BD8 /* HikeView.swift in Sources */,
 				52A8ACFD2A39FEB40010E22A /* ModelData.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -358,7 +398,7 @@
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"SwiftUITutorial/Preview Content\"";
-				DEVELOPMENT_TEAM = 833DD2H3KD;
+				DEVELOPMENT_TEAM = "";
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
